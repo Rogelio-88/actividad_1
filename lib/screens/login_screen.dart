@@ -11,13 +11,20 @@ class login_screen extends StatefulWidget {
 class _login_screenState extends State<login_screen> {
   @override
   Widget build(BuildContext context) {
+    final sise sise=MediaQuery(data: data, child: child)
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            RiveAnimation.asset( 'assets/animated_login_character.riv')
-          ],
+        child: 
+        SizedBox(
+          width: sise,
+          
+          builder: (context, state) {
+            return Column(
+                  children: [
+                    RiveAnimation.asset( 'assets/animated_login_character.riv')
+                  ],
+                );
+          },
         )),
     );
   }
-}
